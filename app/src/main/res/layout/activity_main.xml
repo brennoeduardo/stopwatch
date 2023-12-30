@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="20dp"
+        android:background="@color/design_default_color_on_primary"
+        tools:ignore="UnusedAttribute">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tempo (em minutos)"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="369dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_start"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:backgroundTint="#429C00"
+        android:text="Iniciar" />
+
+    <Button
+        android:layout_width="369dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_end"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:backgroundTint="#E50000"
+        android:text="Parar" />
+
+    <Button
+        android:layout_width="369dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_pause"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:backgroundTint="#EEE209"
+        android:text="Pausar" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:paddingVertical="10dp"
+        />
+
+</LinearLayout>
